@@ -10,7 +10,7 @@ namespace StudentMajors.Models
 		public int Id { get; set; }
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
-		public int MajorId { get; set; }
+		public int? MajorId { get; set; }
 		public int Sat { get; set; }
 
 		public Student() { }
