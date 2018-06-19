@@ -13,7 +13,7 @@ namespace StudentMajors.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Description = c.String(),
-                        MajorId = c.Int(nullable: false),
+                        MajorId = c.Int(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -45,7 +45,7 @@ namespace StudentMajors.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         FirstName = c.String(),
                         LastName = c.String(),
-                        MajorId = c.Int(nullable: false),
+                        MajorId = c.Int(),
                         Sat = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
