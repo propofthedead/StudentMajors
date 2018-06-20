@@ -160,6 +160,10 @@
     <Compile Include="Migrations\201806191802431_intialize.Designer.cs">
       <DependentUpon>201806191802431_intialize.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806201816231_final touches.cs" />
+    <Compile Include="Migrations\201806201816231_final touches.Designer.cs">
+      <DependentUpon>201806201816231_final touches.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\ClassesForStudent.cs" />
@@ -247,6 +251,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806191802431_intialize.resx">
       <DependentUpon>201806191802431_intialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806201816231_final touches.resx">
+      <DependentUpon>201806201816231_final touches.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
