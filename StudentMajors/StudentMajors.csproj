@@ -149,6 +149,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClassesController.cs" />
+    <Compile Include="Controllers\ClassesForStudent.cs" />
     <Compile Include="Controllers\EnrolledsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MajorsController.cs" />
@@ -225,6 +226,7 @@
     <Content Include="Views\Enrolleds\Details.cshtml" />
     <Content Include="Views\Enrolleds\Edit.cshtml" />
     <Content Include="Views\Enrolleds\Index.cshtml" />
+    <Content Include="Views\Students\ClassesForStudent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
