@@ -15,19 +15,19 @@ namespace StudentMajors.Controllers
         private SchoolDataContext db = new SchoolDataContext();
 		public ActionResult ClassesForStudent(int? id) {
 			ClassesForStudent cfs = new ClassesForStudent();
-			cfs.Student = db.Students.Find(id);
+			cfs.student = db.Students.Find(id);
 			var classes = new List<Class>();
 			var enrolleds = db.Enrolleds.Where(e => e.StudentId == id).ToArray();
 			foreach (var enrolled in enrolleds) {
 				classes.Add(db.Classes.Find(enrolled.ClassId));
 			}
-			cfs.Classes = from s in db.Students
+			cfs.classes = from s in db.Students
 						  join e in db.Enrolleds
 							  on s.Id equals e.StudentId
 						  join c in db.Classes
 							  on e.ClassId equals c.Id
 						  select c;
-			cfs.Classes = classes;
+			cfs.classes = classes;
 			return View(cfs);
 		}
         // GET: Students

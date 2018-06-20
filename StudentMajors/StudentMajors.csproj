@@ -149,7 +149,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClassesController.cs" />
-    <Compile Include="Controllers\ClassesForStudent.cs" />
     <Compile Include="Controllers\EnrolledsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MajorsController.cs" />
@@ -163,6 +162,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\ClassesForStudent.cs" />
     <Compile Include="Models\Enrolled.cs" />
     <Compile Include="Models\Major.cs" />
     <Compile Include="Models\SchoolDataContext.cs" />
